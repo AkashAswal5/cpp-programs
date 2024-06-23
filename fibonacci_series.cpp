@@ -10,6 +10,7 @@ int a=0;
 for(int i=0 ; i<=n ; i++){
     
     cout<< sum << " ";     // sum=0 alpha =1
+    
     a=alpha;
 alpha =sum; // alpha =0
 sum=a; //sum=1
@@ -17,7 +18,7 @@ sum=a; //sum=1
     sum=sum+alpha; // sum=1 
     //sum=1 alpha=1
 }
-
+    
 }
 
 int main(){
