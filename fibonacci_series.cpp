@@ -15,20 +15,7 @@ alpha =sum; // alpha =0
 sum=a; //sum=1
 
     sum=sum+alpha; // sum=1 
-
-       
-
     //sum=1 alpha=1
-
-
-    
-
-  
-
-
-   
-
-
 }
 
 }
