@@ -43,3 +43,5 @@ cout<<binarySearch(arr , n, key)<<endl;
 
     return 0 ;
 }
+
+// time complexity of binary search = O(log n  base 2)
