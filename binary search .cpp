@@ -12,7 +12,6 @@ while (s<=e){
 if(arr[mid]==key){
     return mid;
 }
-
 else if (arr[mid]>key){
     e=mid-1;
 }
@@ -21,7 +20,6 @@ else {
 }
 }
 return -1;
-
 }
 
 int main(){
