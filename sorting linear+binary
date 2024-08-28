@@ -15,7 +15,7 @@ int linearsearch(int n , int arr[], int key){
 
 
 int  binarysearch(int n , int arr[] , int key){
-    int s=0 ,e=n;
+    int s=0 ,e=n-1;
     while(s<=e){
             int mid=(s+e)/2;
 
