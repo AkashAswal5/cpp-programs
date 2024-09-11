@@ -24,7 +24,7 @@ using namespace std;
 
 int main(){
     teacher t1;
-    t1.name="AKASH";
+    t1.name="AK";
     t1.subject="C++";
     t1.dept="comp science ";
     t1.salary= 2500;
