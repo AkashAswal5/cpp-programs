@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+#include<vector>
+
+using namespace std;
+
+int main(){
+    vector<int> v; //vector creation
+    v.push_back(10); // Add elements to the vector // first element 
+    v.push_back(20);  // Second element
+    v.push_back(30); // Third Element
+
+    cout<< "First Element: "<<v[0]<<endl;   //access first element
+
+    v[0]=51;   // modify first element
+    cout<<"New Value of First Element " <<v[0] <<endl;
+
+    for(int x:v){
+        cout<<x <<" ";
+    }cout<<endl;
+    
+// Remove the last element
+v.pop_back();
+
+// vector size
+cout<<" Vector Size: "<<v.size()<<endl;
+
+
+
+
+    return 0;
+}
