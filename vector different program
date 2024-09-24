@@ -1,0 +1,55 @@
+#include<iostream>
+#include<algorithm>
+#include<vector>
+
+using namespace std;
+int main(){
+
+//vector initilization
+vector<int>vec={10,51,1,42,74,1 ,51,10,7845,145};
+
+//find maximum element in vector 
+auto maxelement=max_element(vec.begin(), vec.end());
+
+cout<<" MAXIMUM ELEMENT : "<<*maxelement;
+
+//print original vector
+cout<<endl<<"Original Vector: ";
+for(int i: vec){
+    cout<< i <<" ";
+}
+
+
+
+cout<<endl;
+// Reverse a vector
+ reverse(vec.begin(),vec.end());
+
+ cout<<"Reverse vector: ";
+ for(int i : vec){
+    cout<<i<<" ";
+ }
+
+cout<<endl;
+//check if vector is empty or not 
+
+if(vec.empty()){
+    cout<<"Vector is empty. "<<endl;
+}
+else{
+    cout<<"Vector is not empty. "<<endl;
+}
+
+//Remove duplicate element from vector
+ sort(vec.begin(), vec.end());
+ auto last=unique(vec.begin() , vec.end());
+ vec.erase(last,vec.end());
+
+cout<<"vector after Removing Duplicates: ";
+for(int i:vec){
+    cout<<i<<" ";
+}
+
+cout<<endl;
+    return 0;
+}
