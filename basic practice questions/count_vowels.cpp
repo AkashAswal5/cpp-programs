@@ -9,7 +9,7 @@ int main()
 
     string str1;
     cout << "Enter the String: ";
-    cin >> str1;
+     getline(cin, str1); // Use getline to handle input with spaces
     int count = 0;
     int n = str1.length();
 
