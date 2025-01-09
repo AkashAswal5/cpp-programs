@@ -1,3 +1,9 @@
+/*
+     Features of deque:
+Double-ended operations: You can insert or remove elements from both ends.
+Dynamic sizing: Unlike arrays, it can grow dynamically without manual memory management.
+Random access: Provides constant-time access to any element.
+    */
 #include <deque>
 #include <iostream>
 
