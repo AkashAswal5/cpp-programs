@@ -1,0 +1,77 @@
+#include<iostream>
+using namespace std;
+
+struct node{
+ int data;
+ node *next;
+ node(int x){
+    data=x;
+    next=NULL;
+ }
+};
+
+void Insertatstart(node*head,int x){
+    node *newnode=new node(x);
+    newnode->next=head;
+    head=newnode;
+}
+
+void print(node *&head){
+    node*temp=head;
+    while(temp!=NULL){
+        cout<<temp->data<<" ";
+        temp=temp->next;
+    }
+}
+
+void insertatend(node*&tail, int x){
+    node* newnode=new node(x);
+    tail->next=newnode;
+    tail=newnode;
+
+}
+
+// insert at specific position 
+
+void Insertatmiddle(node*head, node*tail, int pos, int x){
+    node *newnode=new node(x);
+    
+    if(pos==1){
+        Insertatstart(head,x);
+        return ;
+    }
+else{
+    node *temp=head;
+    int cnt=1;
+    while(cnt < pos-1){
+        temp=temp->next;
+        cnt++;
+    }
+    if(temp->next==NULL){
+        insertatend(tail,x);
+    }
+    newnode->next=temp->next;
+    temp->next =newnode;
+}
+}
+
+
+int main(){
+
+node * newnode=new node(1);
+node * head=newnode;
+node *tail=newnode;
+cout<<newnode->data;
+cout<<newnode->next;
+
+cout<<endl;
+Insertatstart(head, 2);
+
+
+insertatend(tail,3);
+
+
+Insertatmiddle(head,tail,3,8);
+print(head);
+    return 0;
+}
